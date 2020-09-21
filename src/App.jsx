@@ -92,14 +92,7 @@ class App extends React.Component {
         })
 
     }
-    componentDidMount(){
-        axios.get('http://tempgaragelife.herokuapp.com/posts')
-        .then(res=> {
-            this.setState({
-              products: res.data
-            })
-          })  
-        }
+
 
     render() {
         return (
